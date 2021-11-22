@@ -1,0 +1,5 @@
+.wrapper--super
+{
+    display: flex;
+    justify-content: space-between;
+}
