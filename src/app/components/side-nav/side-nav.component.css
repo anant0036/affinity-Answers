@@ -1,0 +1,36 @@
+div
+{
+    /* border: 2px solid red; */
+    width: 12vw;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+}
+
+button
+{
+    height: 55px;
+    margin-bottom: 80px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    border: none;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff;
+}
+
+.list-item-active
+{
+    color: green;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}

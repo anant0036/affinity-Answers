@@ -1,5 +1,19 @@
+section
+{
+    /* border-radius: 50px; */
+    background-color: #e0e0e0;
+    /* box-shadow:  20px 20px 60px #bebebe,
+                -20px -20px 60px #ffffff; */
+    height: 100vh;
+}
 .wrapper--super
 {
     display: flex;
     justify-content: space-between;
+}
+
+.wrapper-card
+{
+    border: 2px solid red;
+    width: 85vw;
 }
