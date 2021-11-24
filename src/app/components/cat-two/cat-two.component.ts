@@ -15,7 +15,6 @@ export class CatTwoComponent implements OnInit {
   ngOnInit(){
     this.product.fetchProductjew().subscribe(data =>{
       this.productList = data;
-      console.log(this.productList);
     });
   }
 

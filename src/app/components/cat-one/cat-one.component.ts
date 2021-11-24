@@ -19,11 +19,7 @@ export class CatOneComponent implements OnInit {
       this.productList.forEach((a:any) => {
         Object.assign(a,{quantity:1,total:a.price})
       });
-
-      console.log(this.productList);
     });
-
-    console.log("running");
   }
 
   addtocart(item: any){

@@ -1,13 +1,12 @@
 section
 {
-    /* border: 1px solid red; */
+    
     display: flex;
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 10px;
-    /* border-radius: 50px; */
     background: #e0e0e0;
     box-shadow:  20px 20px 60px #bebebe,
                 -20px -20px 60px #ffffff;
