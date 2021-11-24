@@ -1,24 +1,12 @@
 <section>
-    <div>
-        <img src="/assets/Images/product1.jpeg" alt="">
+    <div *ngFor="let item of productList">
+        <img src="{{item.image}}" alt="">
 
-        <p>Product Name</p>
-        <button>Add To Cart</button>
+        <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 20ch;">{{item.title}}</p>
+        <p>${{item.price}}</p>
+        <button (click)=addtocart(item)>Add To Cart</button>
     </div>
 
-    <div>
-        <img src="/assets/Images/product1.jpeg" alt="">
-
-        <p>Product Name</p>
-        <button>Add To Cart</button>
-    </div>
-
-    <div>
-        <img src="/assets/Images/product1.jpeg" alt="">
-
-        <p>Product Name</p>
-        <button>Add To Cart</button>
-    </div>
 
 
 </section>

@@ -1,11 +1,18 @@
-<!-- <section class="empty">
+<section class="empty" *ngIf="products.length === 0">
     <h2>Cart is empty</h2>
-</section> -->
+</section>
 
-<section class="not--empty">
+<section class="not--empty" *ngIf="products.length !=0">
 
     <div class="cart-outer">
-        <div class="long-cart">
+        <div class="long-cart" *ngFor="let item of products; let i = index">
+            <img src="{{item.image}}" alt="img">
+            <p style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;max-width: 15ch;">{{item.title}}</p>
+            <p>{{item.price}}</p>
+            <button (click)="removeItem(item)">Delete</button>
+        </div>
+
+        <!-- <div class="long-cart">
             <img src="/assets/Images/product1.jpeg" alt="img">
             <p>Product Name</p>
             <button>Delete</button>
@@ -15,13 +22,7 @@
             <img src="/assets/Images/product1.jpeg" alt="img">
             <p>Product Name</p>
             <button>Delete</button>
-        </div>
-
-        <div class="long-cart">
-            <img src="/assets/Images/product1.jpeg" alt="img">
-            <p>Product Name</p>
-            <button>Delete</button>
-        </div>
+        </div> -->
     </div>
 
 </section>

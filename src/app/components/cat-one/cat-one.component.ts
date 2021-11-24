@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
+import { ProductServiceService } from 'src/app/services/product-service.service';
 
 @Component({
   selector: 'app-cat-one',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CatOneComponent implements OnInit {
 
-  constructor() { }
+  productList:any = [];
+  constructor(private product: ProductServiceService,private cartService : CartService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.product.fetchProduct().subscribe(data =>{
+      this.productList = data;
+
+      this.productList.forEach((a:any) => {
+        Object.assign(a,{quantity:1,total:a.price})
+      });
+
+      console.log(this.productList);
+    });
+
+    console.log("running");
   }
+
+  addtocart(item: any){
+    this.cartService.addtoCart(item);
+  }
+  
 
 }

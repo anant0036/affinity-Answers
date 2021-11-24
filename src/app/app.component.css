@@ -14,6 +14,6 @@ section
 
 .wrapper-card
 {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 85vw;
 }

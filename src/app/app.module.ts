@@ -9,6 +9,7 @@ import { CatOneComponent } from './components/cat-one/cat-one.component';
 import { CatTwoComponent } from './components/cat-two/cat-two.component';
 import { CatThreeComponent } from './components/cat-three/cat-three.component';
 import { CartComponent } from './components/cart/cart.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CartComponent } from './components/cart/cart.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
